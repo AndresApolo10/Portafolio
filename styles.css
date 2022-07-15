@@ -612,7 +612,7 @@ header .icon_burger{
     color: white;
 }
 
-@media (min-width: 600px){
+@media (min-width: 800px){
     .header{
         background-image: url(./Imagenes/Estructura\ home\ esktop.png);
         background-size: cover;
@@ -869,9 +869,8 @@ header .icon_burger{
         position: relative;
     }
     
-    .content_btn button{
-       margin-top: 1em;
-       margin: 2em;
+    .content_btn button{ 
+       margin: 1.5em;
        width: 340px;
        height: 70px;
        border-radius: 2em;
@@ -887,7 +886,7 @@ header .icon_burger{
     
     .content_svg{
         position: absolute;
-        margin-top: 4em;
+        margin-top: 3.2em;
         margin-right: 14em;
         color: white;
     }
