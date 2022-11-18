@@ -13,7 +13,6 @@
             <ul id="menu" class="show__menu">
                 <li><a href="#home"><p>Home</p></a></li>
                 <li><a href="#acerca">Acerca de mi</a></li>
-                <li><a href="#habilidades">Mis habilidades</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#portafolio">Mi portafolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -32,11 +31,9 @@
         <div class="Content_Design">
                 <div class="Content_Design1">
                     <h5>ReactJS</h5>
-                    <!-- <h5>4 años</h5> -->
                 </div>
                 <div class="Content_Design2">
                     <h5>Frontend Dev</h5>
-                    <!-- <h5>1 año</h5> -->
                 </div>
         </div>
         <img src="./Imagenes/FotoAndres.jpg" alt="FotoANDRES">
@@ -72,6 +69,16 @@
                 </a>   
             </div>                  
         </div>
+
+        <div class="burbujas">
+            <img src="/Imagenes/JS.jpg" alt="JS" class="img">
+            <img src="/Imagenes/HTML1.png" alt="JS" class="img">
+            <img src="/Imagenes/CSS1.PNG" alt="JS" class="img">
+            <img src="/Imagenes/REACTJS1.png" alt="JS" class="img">
+            <img src="/Imagenes/REDUX.jpg" alt="JS" class="img">
+            <img src="/Imagenes/NODEJS.png" alt="JS" class="img">
+            <img src="/Imagenes/SQL.png" alt="JS" class="img">
+        </div>
     </header>
 
     <main>
@@ -91,11 +98,43 @@
         <div class="content_bio">
             <h2>Acerca de mí</h2> </div>
         <div class="content_p">
-            <h3></h3>
+            <!-- <h3></h3> -->
             <p>Desarrollador Web Full Stack en formación. 
                 Dedicado y apasionado por los retos que presenta la vida de la tecnología, 
                 amante del deporte y conocer el mundo. Estudiante con conocimiento en fundamentos en HTML, 
                 CSS y JavaScript. Creación de aplicaciones con React JS con el manejo de API's, React Router, Redux.</p>
+
+            <ul class="ul">
+                <li class="li">
+                    <a href="#" class="a" title="Imagen 1">
+                        <img src="/Imagenes/graduacion.JPG" alt="Imagen 1" class="img" loading="lazy">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="Imagen 2">
+                        <img src="/Imagenes/viaje.JPG" alt="Imagen 2" class="img1" loading="lazy">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="Imagen 3">
+                        <img src="/Imagenes/futbol.JPG" alt="Imagen 3" class="img2" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lightbox">
+                <button class="cerrar">Cerrar</button>
+                <img src="/Imagenes/graduacion.JPG" alt="Imagen 1" class="grande" loading="lazy">
+            </div>
+            <div class="lightbox">
+                <button class="cerrar">Cerrar</button>
+                <img src="/Imagenes/viaje.JPG" alt="Imagen 1" class="grande" loading="lazy">
+            </div>
+            <div class="lightbox">
+                <button class="cerrar">Cerrar</button>
+                <img src="/Imagenes/futbol.JPG" alt="Imagen 1" class="grande" loading="lazy">
+            </div>
+
         </div>
         <div class="content_btn">
             <a href="/downloads/CV - AA.pdf" download>
@@ -111,118 +150,89 @@
         </div>
     </section>
 
-    <section>
+    <section class="content_study">
         <div class="content_header">
             <h2>Estudios</h2>
         </div>
-        <div class="content_study">
-            <div class="content_ucsg">
-            <img src="./Imagenes/ucsg.png" alt="UCSG">
-            <h4>Universidad Católica de Santiago de Guayaquil</h4>
-            <h5>2009-2016</h5>
-            <h5>Ingeniero en Sistemas Computacionales</h5>
-            </div>
-            <div class="content_Acad">
-            <img src="./Imagenes/logo_academlo 2.png" alt="ACADEMLO">
-            <h4>Academlo</h4>
-            <h5>2022</h5>
-            <h5>Programación full stack</h5>
-            </div>
-        </div>
-    </section>
 
-    <section class="content-habili" id="habilidades">
-        <div class="content_hab">
-            <h2>Mis habilidades</h2>
-        </div>
-
-        <div class="content_hab1">
-            <p>ReactJS</p>     
-            <div class="content_hab1-1">
-                <p>80%</p>
+        <div class="acordeon">
+            <div class="bloque activo">
+                <h2 class="h2"><img class='uni' src="./Imagenes/ucsg.png" alt="UCSG">Universidad Católica de Santiago de Guayaquil</h2>
+                <p class="contenido">· Ingeniero en Sistemas Computacionales 2009 - 2016</p>
             </div>
-            <div class="content_hab2">
-                <div class="content_hab3" style="width: 80%"></div> 
+            <div class="bloque">
+                <h2 class="h2"><img class="aca" src="./Imagenes/academlo.png" alt="ACADEMLO">Academlo</h2>
+                <p class="contenido">· Foundations in HTML, CSS and Javascript - 2022 <br> 
+                    · Front-End Development with React - 2022 <br>
+                    · Back-End Development with Node.js - 2022 <br>
+                    · Full Stack Web Development - 2022 
+                </p>
             </div>
-        </div>
-
-        <div class="content_hab1">
-            <p>CSS</p>   
-            <div class="content_hab1-2">
-                <p>85%</p>
-            </div>  
-            <div class="content_hab2">
-                <div class="content_hab3" style="width: 85%"></div> 
-            </div>
-        </div>
-
-        <div class="content_hab1">
-            <p>Html</p>     
-            <div class="content_hab1-3">
-                <p>80%</p>
-            </div>
-            <div class="content_hab2">
-                <div class="content_hab3" style="width: 80%"></div> 
-            </div>    
-        </div>
-
-        <div class="content_hab1">
-            <p>JavaScript</p>     
-            <div class="content_hab1-4">
-                <p>75%</p>
-            </div>
-            <div class="content_hab2">
-                <div class="content_hab3" style="width: 75%"></div> 
-            </div>    
         </div>
     </section>
     
-    <section id="experiencia">
-    <div class="content_tittle">
-        <h2>Experiencia</h2>
-        
-        <div class="content_interactive">
-            <div class="content_int1">
-                <img src="./Imagenes/logo_academlo 2.png" alt="imagen 1">
-                <h3>JavaScript, Html & CSS</h3>
-            </div>
-            <div class="content_int2">
-                <img src="./Imagenes/logo_academlo 2.png" alt="imagen 1">
-                <h3>ReactJS - Vite</h3>
-            </div>
+    <section class="content_experiencia" id="experiencia">
+        <div class="content_tittle">
+            <h2>Experiencia</h2>
         </div>
-    </div>
+
+            <div class="carrousel">
+                <div class="content_grande">
+                    <img src="Imagenes/javascript.jpg" alt="JavaScript" class="img">
+                    <img src="Imagenes/html.jpg" alt="Html" class="img">
+                    <img src="Imagenes/css.jpg" alt="Css" class="img">
+                    <img src="Imagenes/reactjs.jpg" alt="ReactJS" class="img">
+                    <img src="Imagenes/nodejs-express.jpg" alt="NodeJS" class="img">
+                </div>
+
+                <ul class="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
+
     </section>  
 
     <section id="portafolio">
+        <div class="Content_principal">
+
         <div class="Content_port">
             <p>Mi Portafolio</p>
         </div>      
 
-        <!-- <div class="Content_port1">
-            <p>UI design</p>
-            <p>Web development</p>
-        </div> -->
-        
-    <div class="Content_principal">
-        <div>
-            <a href="https://maestro-poke-andres.netlify.app/">
+        <div class="contenedor">
+            <ul class="ul">
+                <li class="li1">PokeAPI</li>
+                <li class="li1">E-commerce</li>
+                <li class="li1">RickAndMortyAPI</li>
+                <li class="li2 activo">Todos</li>
+            </ul>
+
+            <div class="subcontenedor">
+                <div class="imagen"><a href="https://maestro-poke-andres.netlify.app/">
                 <img class="Content_port2" src="./Imagenes/pokemons.jpg" alt="PokeApi">
-            </a>
+                </a></div>
+                <div class="imagen"><a href="https://e-commerce-andres.netlify.app/">
+                    <img class="Content_port3" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
+                </a></div>
+                <div class="imagen"><a href="https://rickyandmorty-by-andres.netlify.app/">
+                    <img class="Content_port4" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
+                </a></div>
+                <div class="imagen1 activo"><a href="https://maestro-poke-andres.netlify.app/">
+                    <img class="Content_port2" src="./Imagenes/pokemons.jpg" alt="PokeApi">
+                </a></div>
+                <div class="imagen1 activo"><a href="https://e-commerce-andres.netlify.app/">
+                    <img class="Content_port3" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
+                </a></div>
+                <div class="imagen1 activo"><a href="https://rickyandmorty-by-andres.netlify.app/">
+                    <img class="Content_port4" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
+                </a></div>
+            </div>
         </div>
-
-        <div >
-            <a href="https://e-commerce-andres.netlify.app/">
-                <img class="Content_port3" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
-            </a>
         </div>
-
-        <div >
-            <a href="https://rickyandmorty-by-andres.netlify.app/">
-                <img class="Content_port4" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
-            </a>
-        </div>
-    </div>
 
     </section>
 
@@ -258,8 +268,7 @@
 
     <section id="contact">
         <div class="Content_final">
-            <p>Andrés Apolo</p>
-            <p>Hecho con amor en Academlo</p>
+            <p>® 2022 por Andrés Apolo </p>
         </div>
     </section>
     </main>
