@@ -18,20 +18,55 @@ iconBurger.addEventListener("click", function () {
     menu.classList.toggle("show__menu");
 });
 
-punto.forEach( ( cadaPunto, i) => {
+let index = 0; 
+const intervalTime = 2000;
+let sliderInterval;
+
+function moveToNextSlide() {
+    let posicion = index;
+    let operacion = posicion * -20;
+
+    grande.style.transform = `translateX(${operacion}%)`;
+   
+    for (let i = 0; i < punto.length; i++) {
+        punto[i].classList.remove('activo');
+    }
+    
+    punto[index].classList.add('activo');
+
+    index = (index + 1) % punto.length;
+}
+
+function startSlider() {
+    if (sliderInterval) {
+        clearInterval(sliderInterval);
+    }
+
+    sliderInterval = setInterval(moveToNextSlide, intervalTime);
+}
+
+startSlider();
+
+punto.forEach((cadaPunto, i) => {
     punto[i].addEventListener('click', () => {
+        
+        clearInterval(sliderInterval);
 
-        let posicion = i
-        let operacion = posicion * -20
+        let posicion = i;
+        let operacion = posicion * -20;
 
-        grande.style.transform = `translateX(${ operacion }%)`
+        grande.style.transform = `translateX(${operacion}%)`;
 
-        punto.forEach(( cadaPunto, i) => {
-            punto[i].classList.remove('activo')
-        })
-        punto[i].classList.add('activo')
-    })
+        punto.forEach((cadaPunto, i) => {
+            punto[i].classList.remove('activo');
+        });
+        punto[i].classList.add('activo');
+
+        sliderInterval = setInterval(moveToNextSlide, intervalTime);
+    });
 });
+
+
 
 enlaces.forEach(( cadaEnlace, i) => {
     enlaces[i].addEventListener('click', (e) => {
@@ -75,7 +110,7 @@ cerrar.addEventListener('click', () => {
 
 h2.forEach(( cadaH2, i) => {
     h2[i].addEventListener('click', () => {
-
+        
         bloque.forEach(( cadaBloque, i) => {
             bloque[i].classList.remove('activo')
         })
@@ -85,7 +120,7 @@ h2.forEach(( cadaH2, i) => {
 
 li.forEach(( cadaLi, i) => {
     li[i].addEventListener('click', () => {
-
+       
         li.forEach(( cadaLi, i) => {
             li[i].classList.remove('activo')
             contenedor[i].classList.remove('activo')
@@ -103,7 +138,6 @@ li.forEach(( cadaLi, i) => {
 
 li2.forEach(( cadaLi, i) => {
     li2[i].addEventListener('click', () => {
-
         li2.forEach(( cadaLi, i) => {
             li2[i].classList.remove('activo')
             li[i].classList.remove('activo')
