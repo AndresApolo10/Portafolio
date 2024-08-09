@@ -828,7 +828,7 @@ header .icon_burger{
 
 .carrousel{
     width: 90%;
-    max-width: 120em;
+    /* max-width: 120em; */
     padding: 2em;
     border-radius: 1em;
     box-shadow: 2px 2px 10px #197f5b;
@@ -907,15 +907,17 @@ header .icon_burger{
     width: 100%;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
 }
 
 .contenedor .li1{
-    padding: 1em;
-    margin: 0 2em 0 0;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
     border-radius: 1em;
     box-shadow: 2px 2px 10px #575858;
     transition: box-shadow 200ms ease, transform 200ms ease;
@@ -937,8 +939,10 @@ header .icon_burger{
 }
 
 .contenedor .li2{
-    padding: 1em;
-    margin: 0 2em 0 0;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
     border-radius: 1em;
     box-shadow: 2px 2px 10px #575858;
     transition: box-shadow 200ms ease, transform 200ms ease;
@@ -960,7 +964,7 @@ header .icon_burger{
 }
 
 .contenedor .subcontenedor{
-    min-height: 10vh;
+    width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -1034,7 +1038,7 @@ header .icon_burger{
 
 .Content_port2{
     padding: 1em;
-    width: 600px;
+    width: 100%;
     border-radius: 2em;
     transition: box-shadow 200ms ease, transform 200ms ease;
 }
@@ -1047,7 +1051,7 @@ header .icon_burger{
 
 .Content_port3{
     padding: 1em;
-    width: 600px; 
+    width: 100%; 
     border-radius: 2em;
     transition: box-shadow 200ms ease, transform 200ms ease;
 }
@@ -1060,7 +1064,7 @@ header .icon_burger{
 
 .Content_port4{
     padding: 1em;
-    width: 600px;
+    width: 100%;
     border-radius: 2em;
     transition: box-shadow 200ms ease, transform 200ms ease;
 }
