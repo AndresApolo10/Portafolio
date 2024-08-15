@@ -1,5 +1,6 @@
 const iconBurger = document.querySelector("#icon_burger");
 const menu = document.querySelector("#menu");
+const menuItems = document.querySelectorAll("#menu a");
 const grande = document.querySelector('.content_grande')
 const punto  = document.querySelectorAll('.punto')
 const enlaces = document.querySelectorAll('.ul .a')
@@ -8,14 +9,20 @@ const grande1 = document.querySelector('.grande')
 const cerrar = document.querySelector('.cerrar')
 const bloque = document.querySelectorAll('.bloque')
 const h2 = document.querySelectorAll('.h2')
-const li = document.querySelectorAll('.li1')
-const li2 = document.querySelectorAll('.li2')
-const contenedor = document.querySelectorAll('.imagen')
-const contenedor1 = document.querySelectorAll('.imagen1')
-
+const listItems = document.querySelectorAll('.contenedor li');
+const li1 = document.querySelector('.li1')
+const li2 = document.querySelector('.li2')
+const li3 = document.querySelector('.li3')
+const liAll = document.querySelector('.liAll')
 
 iconBurger.addEventListener("click", function () {
     menu.classList.toggle("show__menu");
+});
+
+menuItems.forEach(item => {
+    item.addEventListener("click", function () {
+        menu.classList.toggle("show__menu");
+    });
 });
 
 let index = 0; 
@@ -52,8 +59,8 @@ punto.forEach((cadaPunto, i) => {
         
         clearInterval(sliderInterval);
 
-        let posicion = i;
-        let operacion = posicion * -20;
+        index = i;
+        let operacion = index * -20;
 
         grande.style.transform = `translateX(${operacion}%)`;
 
@@ -118,39 +125,80 @@ h2.forEach(( cadaH2, i) => {
     })
 })
 
-li.forEach(( cadaLi, i) => {
-    li[i].addEventListener('click', () => {
-       
-        li.forEach(( cadaLi, i) => {
-            li[i].classList.remove('activo')
-            contenedor[i].classList.remove('activo')
-        })
-        li2.forEach(( cadaLi, i) => {
-            li2[i].classList.remove('activo')
-            contenedor1[i].classList.remove('activo')
-            contenedor1[i+1].classList.remove('activo')
-            contenedor1[i+2].classList.remove('activo')
-        })
-        li[i].classList.add('activo')
-        contenedor[i].classList.add('activo')
-    })
-})
 
-li2.forEach(( cadaLi, i) => {
-    li2[i].addEventListener('click', () => {
-        li2.forEach(( cadaLi, i) => {
-            li2[i].classList.remove('activo')
-            li[i].classList.remove('activo')
-            li[i+1].classList.remove('activo')
-            li[i+2].classList.remove('activo')
-            contenedor[i].classList.remove('activo')
-        })
-        li2[i].classList.add('activo')
-        contenedor[i].classList.remove('activo')
-        contenedor[i+1].classList.remove('activo')
-        contenedor[i+2].classList.remove('activo')
-        contenedor1[i].classList.add('activo')
-        contenedor1[i+1].classList.add('activo')
-        contenedor1[i+2].classList.add('activo')
-    })
-})
+
+listItems.forEach((item) => {
+    item.addEventListener('click', () => {
+       
+        listItems.forEach(li => li.classList.remove('active'));
+        const images = document.querySelectorAll('.subcontenedor img');
+        images.forEach(img => img.classList.remove('activeImagen'));
+
+        item.classList.add('active');
+
+        if (item.id === 'todos') {
+
+            images.forEach(img => img.classList.add('activeImagen'));
+        } else {
+
+            const imageId = `${item.id}-image`; 
+            const image = document.getElementById(imageId);
+            if (image) {
+                image.classList.add('activeImagen');
+            }
+        }
+    });
+});
+
+
+// li1.addEventListener('click', () => {
+//     console.log('hiadsa')
+//     // Verifica si el elemento ya tiene la clase 'active'
+//     if (li1.classList.contains('active')) {
+//         // Si la tiene, quítala
+//         li1.classList.remove('active');
+//         contenedor1.classList.remove('active');
+
+//     } else {
+//         // Si no la tiene, agrégala
+//         li1.classList.add('active');
+//         contenedor1.classList.add('active');
+//     }
+// });
+
+// li1.forEach(( cadaLi, i) => {
+//     li1[i].addEventListener('click', () => {
+       
+//         li1.forEach(( cadaLi, i) => {
+//             li[i].classList.remove('activo')
+//             contenedor[i].classList.remove('activo')
+//         })
+//         li2.forEach(( cadaLi, i) => {
+//             li2[i].classList.remove('activo')
+//             contenedor1[i].classList.remove('activo')
+//             contenedor1[i+1].classList.remove('activo')
+//             contenedor1[i+2].classList.remove('activo')
+//         })
+//         li[i].classList.add('activo')
+//         contenedor[i].classList.add('activo')
+//     })
+// })
+
+// li2.forEach(( cadaLi, i) => {
+//     li2[i].addEventListener('click', () => {
+//         li2.forEach(( cadaLi, i) => {
+//             li2[i].classList.remove('activo')
+//             li[i].classList.remove('activo')
+//             li[i+1].classList.remove('activo')
+//             li[i+2].classList.remove('activo')
+//             contenedor[i].classList.remove('activo')
+//         })
+//         li2[i].classList.add('activo')
+//         contenedor[i].classList.remove('activo')
+//         contenedor[i+1].classList.remove('activo')
+//         contenedor[i+2].classList.remove('activo')
+//         contenedor1[i].classList.add('activo')
+//         contenedor1[i+1].classList.add('activo')
+//         contenedor1[i+2].classList.add('activo')
+//     })
+// })

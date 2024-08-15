@@ -20,14 +20,14 @@
 
             <div id="icon_burger" class="icon_burger icon_burger-show">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </div>
         </nav>
         <h1>Soy <a>Andrés Apolo</a></h1>
-        <h2>Desarrollador Web Full Stack</h2> 
+        <h2>Front-End Developer</h2> 
         <div class="Content_Design">
                 <div class="Content_Design1">
                     <h5>ReactJS</h5>
@@ -71,13 +71,13 @@
         </div>
 
         <div class="burbujas">
+            <img src="/Imagenes/REACTJS1.png" alt="JS" class="img">
             <img src="/Imagenes/JS.jpg" alt="JS" class="img">
             <img src="/Imagenes/HTML1.png" alt="JS" class="img">
+            <img src="/Imagenes/TypescriptLogo.png" alt="JS" class="img">
             <img src="/Imagenes/CSS1.PNG" alt="JS" class="img">
-            <img src="/Imagenes/REACTJS1.png" alt="JS" class="img">
-            <img src="/Imagenes/REDUX.jpg" alt="JS" class="img">
-            <!-- <img src="/Imagenes/NODEJS.png" alt="JS" class="img"> -->
-            <!-- <img src="/Imagenes/SQL.png" alt="JS" class="img"> -->
+            <img src="/Imagenes/ZustandLogo.png" alt="JS" class="img">
+            <img src="/Imagenes/ReactNativeLogo.png" alt="JS" class="img">
         </div>
     </header>
 
@@ -99,10 +99,9 @@
             <h2>Acerca de mí</h2> </div>
         <div class="content_p">
             
-            <p>Desarrollador Web Full Stack. 
-                Dedicado y apasionado por los retos que presenta la vida de la tecnología, 
-                amante del deporte y conocer el mundo. Estudiante con conocimiento en fundamentos en HTML, 
-                CSS y JavaScript. Creación de aplicaciones con React JS con el manejo de API's, React Router, Redux.</p>
+            <p> Dedicado y apasionado por los retos que presenta la vida de la tecnología, 
+                amante del deporte y conocer el mundo. Desarrollador Front-End con conocimiento en fundamentos en HTML, 
+                CSS y JavaScript. Creación de aplicaciones con React y React Native con el manejo de API's.</p>
 
             <ul class="ul">
                 <li class="li">
@@ -178,11 +177,11 @@
 
             <div class="carrousel">
                 <div class="content_grande">
-                    <img src="Imagenes/javascript.jpg" alt="JavaScript" class="img">
-                    <img src="Imagenes/html.jpg" alt="Html" class="img">
-                    <img src="Imagenes/css.jpg" alt="Css" class="img">
                     <img src="Imagenes/reactjs.jpg" alt="ReactJS" class="img">
-                    <img src="Imagenes/nodejs-express.jpg" alt="NodeJS" class="img">
+                    <img src="Imagenes/ReactNative.png" alt="NodeJS" class="img">
+                    <img src="Imagenes/javascript.jpg" alt="JavaScript" class="img">
+                    <img src="Imagenes/TypeScript.png" alt="TypeScript" class="img">
+                    <img src="Imagenes/Zustand.jpg" alt="Zustand" class="img">
                 </div>
 
                 <ul class="puntos">
@@ -197,41 +196,31 @@
     </section>  
 
     <section id="portafolio">
-        <div class="Content_principal">
-
         <div class="Content_port">
             <p>Mi Portafolio</p>
         </div>      
-
+        <div class="Content_principal">
         <div class="contenedor">
             <ul class="ul">
-                <li class="li1">PokeAPI</li>
-                <li class="li1">E-commerce</li>
-                <li class="li1">RickAndMortyAPI</li>
-                <li class="li2 activo">Todos</li>
+                <li id="pokeAPI" class="li1">PokeAPI</li>
+                <li id="ecommerce" class="li2">E-commerce</li>
+                <li id="rickAndMortyAPI" class="li3">Rick&MortyAPI</li>
+                <li id="todos" class="li4 active">Todos</li>
             </ul>
-
+        
             <div class="subcontenedor">
-                <div class="imagen"><a href="https://maestro-poke-andres.netlify.app/">
-                <img class="Content_port2" src="./Imagenes/pokemons.jpg" alt="PokeApi">
+                <div><a href="https://maestro-poke-andres.netlify.app/">
+                    <img id="pokeAPI-image" class="Content_port2 activeImagen" src="./Imagenes/pokemons.jpg" alt="PokeApi">
                 </a></div>
-                <div class="imagen"><a href="https://e-commerce-andres.netlify.app/">
-                    <img class="Content_port3" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
+                <div><a href="https://e-commerce-andres.netlify.app/">
+                    <img id="ecommerce-image" class="Content_port3 activeImagen" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
                 </a></div>
-                <div class="imagen"><a href="https://rickyandmorty-by-andres.netlify.app/">
-                    <img class="Content_port4" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
-                </a></div>
-                <div class="imagen1 activo"><a href="https://maestro-poke-andres.netlify.app/">
-                    <img class="Content_port2" src="./Imagenes/pokemons.jpg" alt="PokeApi">
-                </a></div>
-                <div class="imagen1 activo"><a href="https://e-commerce-andres.netlify.app/">
-                    <img class="Content_port3" src="./Imagenes/ecommerce.jpg" alt="E-commerce">
-                </a></div>
-                <div class="imagen1 activo"><a href="https://rickyandmorty-by-andres.netlify.app/">
-                    <img class="Content_port4" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
+                <div><a href="https://rickyandmorty-by-andres.netlify.app/">
+                    <img id="rickAndMortyAPI-image" class="Content_port4 activeImagen" src="./Imagenes/RickandMorty.jpg" alt="RickyandMorty">
                 </a></div>
             </div>
         </div>
+        
         </div>
 
     </section>
