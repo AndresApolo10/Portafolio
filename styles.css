@@ -1296,6 +1296,7 @@ header .icon_burger{
     }
 
     .lightbox .grande{
+        width: auto;
         height: 65vh;
         background-color: lightblue;
 
@@ -1646,6 +1647,67 @@ header .icon_burger{
     }
 }
 
+@media (min-width: 768px) {
+    .header h1{
+        font-size: 4rem;
+        margin-top: 10rem;
+    }
+
+    .header h2{
+        font-size: 2.5rem;
+    }
+
+    .Content_Design1{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .Content_Design2{
+        margin-right: 1rem;
+        margin-top: 8rem;
+    }
+
+    .header img{
+        margin-top: -10rem;
+    }
+
+    .content_social{
+        margin-top: 3rem;
+    }
+
+    .content_ig{
+        margin-top: 4rem;
+    }
+
+    .burbujas .img:nth-child(1){
+        left: 2%;
+    }
+
+    .burbujas .img:nth-child(2){
+        left: 15%;
+    }
+
+    .burbujas .img:nth-child(3){
+        left: 28%;
+    }
+
+    .burbujas .img:nth-child(4){
+        left: 41%;
+    }
+    
+    .burbujas .img:nth-child(5){
+        left: 54%;
+    }
+
+    .burbujas .img:nth-child(6){
+        left: 67%;
+    }
+
+    .burbujas .img:nth-child(7){
+        left: 85%;
+    }
+}
+
 @media (min-width: 1024px){
 
     nav ul a{
@@ -1767,10 +1829,6 @@ header .icon_burger{
 
     .ul {
         width: 60%;
-    }
-
-    .lightbox .grande{
-        width: 50%;
     }
 
     .acordeon{
